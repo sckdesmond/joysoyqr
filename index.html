@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desmond’s QR Menu</title>
+  <title>Desmond’s Café Menu</title>
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fdfdfd;
+      background: #fafafa;
       color: #333;
     }
     header {
@@ -23,24 +23,36 @@
     }
     .menu-section {
       padding: 20px;
-      max-width: 600px;
+      max-width: 900px;
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    .menu-section h2 {
-      border-bottom: 2px solid #ffcc00;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-      color: #444;
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
     }
-    .item {
-      display: flex;
-      justify-content: space-between;
-      margin: 8px 0;
-      font-size: 1.1em;
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
-    .item span.price {
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+    }
+    .card p {
+      margin: 0 0 10px;
+      color: #666;
+    }
+    .price {
       font-weight: bold;
       color: #000;
+      margin-bottom: 15px;
     }
     footer {
       text-align: center;
@@ -52,34 +64,40 @@
 </head>
 <body>
   <header>
-    <h1>🍹 Desmond’s Drinks & Desserts Menu</h1>
+    <h1>🍹 Desmond’s Drinks & Desserts</h1>
+    <p>Scan the QR to order via Loyverse</p>
   </header>
 
   <div class="menu-section">
-    <h2>Drinks</h2>
-    <div class="item"><span>Soya Bean Drink (Original)</span><span class="price">RM2.50</span></div>
-    <div class="item"><span>Soya Bean Drink (Brown Sugar)</span><span class="price">RM3.00</span></div>
-    <div class="item"><span>Soya Bean Drink (Gula Melaka)</span><span class="price">RM3.00</span></div>
-    <div class="item"><span>Grass Jelly Soya Drink</span><span class="price">RM3.50</span></div>
-  </div>
-
-  <div class="menu-section">
-    <h2>Desserts</h2>
-    <div class="item"><span>Tau Fu Fah (Classic)</span><span class="price">RM3.50</span></div>
-    <div class="item"><span>Tau Fu Fah (Gula Melaka)</span><span class="price">RM3.80</span></div>
-    <div class="item"><span>Dadih (Mango/Strawberry/Chocolate)</span><span class="price">RM4.00</span></div>
-  </div>
-
-  <div class="menu-section">
-    <h2>Toppings</h2>
-    <div class="item"><span>Boba Pearls</span><span class="price">RM1.00</span></div>
-    <div class="item"><span>Grass Jelly Cubes</span><span class="price">RM1.00</span></div>
-    <div class="item"><span>Red Beans</span><span class="price">RM1.00</span></div>
-    <div class="item"><span>Cendol Strands</span><span class="price">RM1.00</span></div>
+    <!-- Drinks -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180?text=Soya+Bean+Drink" alt="Soya Bean Drink">
+      <h3>Soya Bean Drink (Original)</h3>
+      <p>Classic smooth soy milk</p>
+      <div class="price">RM2.50</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180?text=Tau+Fu+Fah" alt="Tau Fu Fah">
+      <h3>Tau Fu Fah (Gula Melaka)</h3>
+      <p>Silky tofu pudding with palm sugar</p>
+      <div class="price">RM3.80</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180?text=Dadih" alt="Dadih">
+      <h3>Dadih (Mango)</h3>
+      <p>Chilled yogurt pudding with mango</p>
+      <div class="price">RM4.00</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180?text=Boba+Topping" alt="Boba Pearls">
+      <h3>Boba Pearls</h3>
+      <p>Chewy tapioca pearls</p>
+      <div class="price">RM1.00</div>
+    </div>
   </div>
 
   <footer>
-    <p>Scan the QR code to view this menu online anytime!</p>
+    <p>Update anytime via GitHub Pages — free & permanent</p>
   </footer>
 </body>
 </html>
