@@ -2,102 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desmond’s Café Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JOYSOY Menu</title>
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
       margin: 0;
-      padding: 0;
-      background: #fafafa;
+      padding: 20px;
       color: #333;
     }
-    header {
-      background: #ffcc00;
-      padding: 20px;
+    h1 {
       text-align: center;
+      color: #d35400;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
+    .section {
+      margin-bottom: 30px;
     }
-    .menu-section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    .section h2 {
+      color: #e67e22;
+      border-bottom: 2px solid #f39c12;
+      padding-bottom: 5px;
     }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .card h3 {
-      margin: 10px 0 5px;
-      font-size: 1.2em;
-    }
-    .card p {
-      margin: 0 0 10px;
-      color: #666;
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
     }
     .price {
       font-weight: bold;
-      color: #000;
-      margin-bottom: 15px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #eee;
-      font-size: 0.9em;
+      color: #27ae60;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🍹 Desmond’s Drinks & Desserts</h1>
-    <p>Scan the QR to order via Loyverse</p>
-  </header>
+  <h1>JOYSOY MENU</h1>
 
-  <div class="menu-section">
-    <!-- Drinks -->
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=Soya+Bean+Drink" alt="Soya Bean Drink">
-      <h3>Soya Bean Drink (Original)</h3>
-      <p>Classic smooth soy milk</p>
-      <div class="price">RM2.50</div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=Tau+Fu+Fah" alt="Tau Fu Fah">
-      <h3>Tau Fu Fah (Gula Melaka)</h3>
-      <p>Silky tofu pudding with palm sugar</p>
-      <div class="price">RM3.80</div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=Dadih" alt="Dadih">
-      <h3>Dadih (Mango)</h3>
-      <p>Chilled yogurt pudding with mango</p>
-      <div class="price">RM4.00</div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=Boba+Topping" alt="Boba Pearls">
-      <h3>Boba Pearls</h3>
-      <p>Chewy tapioca pearls</p>
-      <div class="price">RM1.00</div>
-    </div>
+  <div class="section">
+    <h2>SOYA</h2>
+    <ul>
+      <li><span>Original Soya 500ml</span><span class="price">RM 12.00</span></li>
+      <li><span>Original</span><span class="price">RM 12.00</span></li>
+      <li><span>Soya with Cincau</span><span class="price">RM 12.00</span></li>
+      <li><span>Soya with Boba</span><span class="price">RM 12.00</span></li>
+    </ul>
   </div>
 
-  <footer>
-    <p>Update anytime via GitHub Pages — free & permanent</p>
-  </footer>
+  <div class="section">
+    <h2>BINGSU</h2>
+    <ul>
+      <li><span>Yam</span><span class="price">RM 12.00</span></li>
+      <li><span>Matcha</span><span class="price">RM 12.00</span></li>
+      <li><span>Strawberry</span><span class="price">RM 12.00</span></li>
+      <li><span>Mango</span><span class="price">RM 12.00</span></li>
+      <li><span>Pistachio</span><span class="price">RM 12.00</span></li>
+      <li><span>Peach Oolong Tea</span><span class="price">RM 12.00</span></li>
+      <li><span>Tiramisu</span><span class="price">RM 12.00</span></li>
+      <li><span>Thai Tea</span><span class="price">RM 12.00</span></li>
+      <li><span>Chocolate</span><span class="price">RM 12.00</span></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>TAUFOOFAH</h2>
+    <ul>
+      <li><span>Taufoofah Original</span><span class="price">RM 12.00</span></li>
+      <li><span>Taufoofah with Red Beans</span><span class="price">RM 12.00</span></li>
+      <li><span>Taufoofah with Boba & Cincau</span><span class="price">RM 12.00</span></li>
+      <li><span>Taufoofah with Boba, Chestnut Popping & Gula Melaka Puding</span><span class="price">RM 12.00</span></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>PUDDING</h2>
+    <ul>
+      <li>Chocolate</li>
+      <li>Mango</li>
+      <li>Strawberry</li>
+      <li>Gula Melaka</li>
+      <li>Yam</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>ADDITIONAL TOPPING</h2>
+    <ul>
+      <li>Taro</li>
+      <li>Boba</li>
+      <li>Red Beans</li>
+      <li>Chestnut Popping Boba</li>
+      <li>Cincau</li>
+      <li>Chocolate Pudding</li>
+      <li>Gula Melaka Pudding</li>
+      <li>Mango Pudding</li>
+      <li>Yam Pudding</li>
+      <li>Strawberry Pudding</li>
+    </ul>
+  </div>
 </body>
 </html>
